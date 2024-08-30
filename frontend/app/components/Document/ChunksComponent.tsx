@@ -56,7 +56,7 @@ const ChunksComponent: React.FC<ChunksComponentComponentProps> = ({
         <div className="flex md:flex-col gap-5">
           <div className="flex md:flex-row lg:flex-col gap-2 justify-center md:justify-start items-center">
             {RAGConfig && (
-              <div className="flex flex-row lg:flex-col gap-2 items-center lg:w-full">
+              <div className="hidden flex flex-row lg:flex-col gap-2 items-center lg:w-full">
                 <ComponentStatus
                   disable={production}
                   component_name={

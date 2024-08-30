@@ -443,7 +443,7 @@ const ChatInterfaceComponent: React.FC<ChatInterfaceComponentProps> = ({
       <div className="flex flex-col bg-bg-alt-verba rounded-lg shadow-lg p-2 md:p-5 text-text-verba gap-5 h-[55vh] overflow-auto">
         <div className="flex gap-1 md:gap-2 items-center">
           {RAGConfig && (
-            <div className="flex gap-2 items-center">
+            <div className="hidden flex gap-2 items-center">
               <ComponentStatus
                 disable={production}
                 component_name={

@@ -180,7 +180,7 @@ const DocumentSearchComponent: React.FC<DocumentSearchComponentProps> = ({
           ></textarea>
 
           <div className="flex justify-between items-center gap-2 lg:w-3/5">
-            <div className="flex w-full">
+            <div className="hidden flex w-full">
               <ComponentStatus
                 disable={production}
                 component_name={RAGConfig ? RAGConfig["Embedder"].selected : ""}

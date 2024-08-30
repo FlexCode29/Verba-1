@@ -119,7 +119,7 @@ const Navbar: React.FC<NavbarProps> = ({
             setPage="DOCUMENTS"
           />
           <NavbarButton
-            hide={production}
+            hide={true}
             APIHost={APIHost}
             Icon={HiOutlineStatusOnline}
             iconSize={icon_size}
@@ -142,7 +142,7 @@ const Navbar: React.FC<NavbarProps> = ({
             setPage="ADD"
           />
           <NavbarButton
-            hide={production}
+            hide={true}
             APIHost={APIHost}
             Icon={IoBuildSharp}
             iconSize={icon_size}
@@ -164,18 +164,6 @@ const Navbar: React.FC<NavbarProps> = ({
           <div
             className={`sm:h-[3vh] lg:h-[5vh] mx-1 hidden sm:block bg-text-alt-verba w-px`}
           ></div>
-          <button
-            className={`md:hidden btn md:btn-sm lg:btn-md lg:flex items-center justify-center border-none bg-secondary-verba hover:bg-button-hover-verba`}
-            onClick={handleGitHubClick}
-          >
-            <FaGithub size={icon_size} className="text-text-verba" />
-            <p className="text-xs sm:hidden md:flex text-text-verba ">
-              {gitHubStars}
-            </p>
-          </button>
-          <p className="hidden lg:flex text-xs text-text-alt-verba">
-            {version}
-          </p>
         </div>
 
         {/* Menu */}

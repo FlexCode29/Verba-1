@@ -244,7 +244,7 @@ export default function Home() {
               RAGConfig={RAGConfig}
               setRAGConfig={setRAGConfig}
               setCurrentPage={setCurrentPage}
-              showComponents={["Reader", "Chunker", "Embedder"]}
+              showComponents={["Reader"]}
             />
           )}
 
