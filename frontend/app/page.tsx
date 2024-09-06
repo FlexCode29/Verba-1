@@ -14,6 +14,7 @@ import { detectHost } from "./api";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { fonts, FontKey } from "./info";
 import PulseLoader from "react-spinners/PulseLoader";
+import LoginComponent from "./components/Login/LoginComponent"; // Import the login component
 
 export default function Home() {
   // Page States
@@ -23,6 +24,7 @@ export default function Home() {
 
   const [production, setProduction] = useState(false);
   const [gtag, setGtag] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   // Settings
   const [settingTemplate, setSettingTemplate] = useState("Default");
@@ -175,7 +177,9 @@ export default function Home() {
       );
     }
   }, [baseSetting, settingTemplate]);
-
+  if (!isAuthenticated) {
+    return <LoginComponent setIsAuthenticated={setIsAuthenticated} />; // Render the login component if not authenticated
+  }
   return (
     <main
       className={`min-h-screen p-5 bg-bg-verba text-text-verba ${fontClassName}`}

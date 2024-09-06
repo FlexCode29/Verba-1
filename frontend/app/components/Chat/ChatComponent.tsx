@@ -70,7 +70,7 @@ const ChatComponent: React.FC<ChatComponentProps> = ({
           />
           <ChunksComponent
             context={context}
-            production={true}
+            production={production}
             chunks={chunks}
             RAGConfig={RAGConfig}
             selectedChunk={selectedChunk}
