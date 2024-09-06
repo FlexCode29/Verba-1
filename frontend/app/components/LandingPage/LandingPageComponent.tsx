@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Image from 'next/image'
 
 const LandingPageComponent: React.FC<{ setIsOnDemo: (value: boolean) => void }> = ({ setIsOnDemo }) => {
     const handleGoToDemo = () => {
@@ -19,13 +19,12 @@ const LandingPageComponent: React.FC<{ setIsOnDemo: (value: boolean) => void }> 
             ></div>
             <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
                 <div className="relative isolate overflow-hidden px-6 pt-16 shadow-3xl backdrop-blur-md backdrop-brightness-75 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-                    <div className="relative mt-16 h-100 lg:mt-8 flex items-center justify-center">
-                        <img
+                    <div className="relative mt-16 h-100 lg:mt-8 flex items-center justify-center rounded-md align-middle">
+                        <Image
                             alt="Logo"
-                            src="./logo.png"
+                            src="static/logo.png"
                             width={180}
                             height={100}
-                            className="rounded-md align-middle"
                         />
                     </div>
                     <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-24 lg:text-left">
