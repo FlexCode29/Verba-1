@@ -4,8 +4,8 @@ import "./globals.css";
 import { detectHost } from "./api";
 
 export const metadata: Metadata = {
-  title: "Verba",
-  description: "The GoldenRAGtriever",
+  title: "Oceans Software",
+  description: "You Bespoke AI",
 };
 
 export default function RootLayout({
