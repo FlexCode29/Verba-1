@@ -46,6 +46,9 @@ const LandingPageComponent: React.FC<{ setIsOnDemo: (value: boolean) => void }> 
                             >
                                 Client Login
                             </button>
+                            <a href="mailto:info@oceanssoftware.com" className="rounded-md bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                                Email Us
+                            </a>
                         </div>
                     </div>
                 </div>
