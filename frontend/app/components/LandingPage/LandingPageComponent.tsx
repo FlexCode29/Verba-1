@@ -17,9 +17,9 @@ const LandingPageComponent: React.FC<{ setIsOnDemo: (value: boolean) => void }> 
                     zIndex: -1,
                 }}
             ></div>
-            <div className="mx-auto max-w-7xl py-24 sm:px-6 md:py-8 sm:py-8 lg:px-8">
+            <div className="mx-auto max-w-7xl py-24 sm:px-6 md:py-2 sm:py-2 lg:px-8">
                 <div className="relative isolate overflow-hidden px-6 pt-16 md:pt4 sm:pt-4 shadow-3xl backdrop-blur-md backdrop-brightness-75 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-                    <div className="relative mt-16 h-100 lg:mt-8 flex items-center justify-center rounded-md align-middle">
+                    <div className="relative mt-16 sm:mt-4 sm:mt-4 h-100 lg:mt-8 flex items-center justify-center rounded-md align-middle">
                         <Image
                             alt="Logo"
                             src="static/logo.png"
