@@ -17,8 +17,8 @@ const LandingPageComponent: React.FC<{ setIsOnDemo: (value: boolean) => void }> 
                     zIndex: -1,
                 }}
             ></div>
-            <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-                <div className="relative isolate overflow-hidden px-6 pt-16 shadow-3xl backdrop-blur-md backdrop-brightness-75 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+            <div className="mx-auto max-w-7xl py-24 sm:px-6 md:py-8 sm:py-8 lg:px-8">
+                <div className="relative isolate overflow-hidden px-6 pt-16 md:pt4 sm:pt-4 shadow-3xl backdrop-blur-md backdrop-brightness-75 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                     <div className="relative mt-16 h-100 lg:mt-8 flex items-center justify-center rounded-md align-middle">
                         <Image
                             alt="Logo"
@@ -28,18 +28,18 @@ const LandingPageComponent: React.FC<{ setIsOnDemo: (value: boolean) => void }> 
                         />
                     </div>
                     <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-24 lg:text-left">
-                        <h2 className="text-3xl font-bold tracking-tight text-white mb-8 text-center sm:text-4xl">
+                        <h2 className="text-3xl md:text-lg sm:text-lg font-bold tracking-tight text-white mb-8 text-center sm:text-4xl">
                             Oceans Software,
                             <br />
                             your bespoke AI.
                         </h2>
-                        <ul className="text-md text-white mb-0 list-disc ">
+                        <ul className="text-md md:text-sm sm:text-sm text-white mb-0 list-disc ">
                             <li>End-to-end solution: just tell us your goal, we’ll take care of it</li>
                             <li>Results-driven: we focus on making the AI work, and we take care of the backend</li>
                             <li>Bespoke: we listen and build what your ask for, with complete flexibility</li>
                             <li>Affordable: you only pay for what you ask for, and our team acts both as software developer and technical consultant</li>
                         </ul>
-                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                        <div className="mt-10 flex items-center justify-center gap-x-6 sm:pb-4 md:pb-4">
                             <button
                                 onClick={handleGoToDemo}
                                 className="rounded-md bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
